@@ -21,11 +21,6 @@ public class CreateDataBase {
 					e.printStackTrace();
 				}
 				
-			}else{
-				LoginBean login = new LoginBean();
-				login.setLogin("brunocosta");
-				login.setSenha("brunoinfo2");
-				GenericDAO.getInstance().persist(login);
 			}
 			
 		}
