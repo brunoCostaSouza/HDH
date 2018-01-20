@@ -168,7 +168,7 @@ public class GenericDAO implements Serializable {
 		List<T> listObjects = new ArrayList<T>();
 
 		String sql = "SELECT " + tabela.getNomeColunasTabela(true) + " FROM "
-				+ tabela.getNomeTabela() + " WHERE " + nomeColuna + " LIKE "
+				+ tabela.getNomeTabela() + " WHERE " + nomeColuna + " ILIKE "
 				+ "'%" + stringPesquisa + "%'";
 
 		try {
